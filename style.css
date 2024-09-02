@@ -1,0 +1,123 @@
+/* Estilo para evitar que a barra de rolagem apareça */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Ocultar a barra de rolagem horizontal */
+  body {
+    overflow-x: hidden;
+  }
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos do header */
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 10px;
+    position: relative;
+}
+
+header .back-button {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+header .back-button:hover {
+    color: #ddd;
+}
+
+header .back-button::before {
+   /* content: "←"; /* Ícone de seta */
+    margin-right: 8px;
+}
+
+/* Estilos do header */
+header {
+    width: 100%;
+    background-color:  #4CAF50;
+    padding: 10px;
+    position: relative; /* Para usar margin */
+}
+
+header .back-button {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2%; /* Posiciona a seta mais ao centro */
+}
+
+header .back-button:hover {
+    color: #ddd;
+}
+
+/* Estilos do formulário */
+.form-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    font-family: cursive;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+
+p {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
